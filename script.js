@@ -2,9 +2,10 @@ function displayDate() {
     document.getElementById('demo').innerHTML = Date()
 }
 
-document.querySelector('button').addEventListener("click",() => {
+document.getElementsByTagName('button')[0]
+.addEventListener("click",() => {
     alert('U click the button')
-})
+ })
 
 window.addEventListener('resize', () => {
     document.getElementById('demo').innerHTML = "U resize!"
@@ -31,3 +32,4 @@ window.addEventListener('keydown', (event) => {
         break
     }
 })
+
